@@ -1,0 +1,137 @@
+body{
+	background-color: #02010a;
+}
+
+.contenido{
+	margin: 0 auto;
+  width: 900px;
+}
+
+header{
+  background-color: rgb(59, 5, 101);
+  border-radius: 10px;
+  padding: 2%;
+
+  display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+  box-sizing: border-box;
+  color: #FFF;
+  width: 100%;
+
+  align-items: center;
+  text-align: center;
+
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+header h1{
+	text-shadow: 2px 2px 5px #02010a;
+	font-size: 2em;
+}
+
+header ul{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	list-style: none;
+	padding: 0 10px 0;
+}
+
+header a{
+	color: inherit;
+	margin: 0 4px 0;
+}
+
+.active{
+	text-decoration: none;
+}
+
+section{
+  background-color: rgb(41, 121, 179);
+  border-radius: 10px;
+  padding-top: 0.1%;
+  padding-bottom: 4%;
+  margin-top: 1%;
+}
+section > article{
+  margin: 0 auto;
+  margin-top: 8%;
+  padding-bottom: 4%;
+  width: 80%;
+  border-bottom: 2px solid #c7c4c4;
+}
+article h1{
+  padding-left: 8%;
+  margin-bottom: 3%;
+}
+article div{
+  text-align: center;
+  display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 3%;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  align-items: center;
+}
+
+article img{
+  border-radius: 10px;
+  border: 1px solid rgb(36, 3, 16);
+  width: 50%;
+}
+
+article p{
+  margin-left: 5%;
+  text-align: justify;
+}
+
+/*Versión de móviles*/
+@media only screen and (max-width: 900px){
+	.contenido{
+		width: 100%;
+  }
+  section > article{
+    margin: 10% auto;
+    width: 90%;
+    border-bottom: 2px solid #c7c4c4;
+  }
+
+  article h1{
+    margin-bottom: 5%;
+  }
+
+  article div{
+    flex-flow: column;
+    text-align: center;
+  }
+
+  article p{
+    margin-left: 0;
+  }
+
+	header{
+		flex-flow: column;
+	}
+
+	header a{
+		font-size: 1em;
+	}
+
+  article div img{
+    width: 100%;
+  }
+}
